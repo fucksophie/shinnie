@@ -35,7 +35,7 @@ fastify.get('/add', {
 	return reply.status(201).send("No Content");
 })
 
-fastify.listen(3000, () => {
+fastify.listen(8080, "0.0.0.0", () => {
 	console.log("Yas!")
 
 	if(!fs.existsSync("count"))
